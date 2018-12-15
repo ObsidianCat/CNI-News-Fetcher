@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<SearchBox
+  fetchNews={[MockFunction]}
+>
+  <form
+    className="search-box input-group"
+    onSubmit={[Function]}
+  >
+    <Input
+      className="search"
+      disabled={false}
+      onChange={[Function]}
+      placeholder="type something to search"
+      prefixCls="ant-input"
+      type="text"
+      value=""
+    >
+      <input
+        className="ant-input search"
+        disabled={false}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="type something to search"
+        type="text"
+        value=""
+      />
+    </Input>
+    <Button
+      block={false}
+      ghost={false}
+      htmlType="submit"
+      loading={false}
+      prefixCls="ant-btn"
+      type="primary"
+    >
+      <Wave>
+        <button
+          className="ant-btn ant-btn-primary"
+          onClick={[Function]}
+          type="submit"
+        >
+          <span
+            key=".0"
+          >
+            Submit
+          </span>
+        </button>
+      </Wave>
+    </Button>
+  </form>
+</SearchBox>
+`;

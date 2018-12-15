@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as snapshot 1`] = `
+<div
+  className="App"
+>
+  <SearchBox
+    fetchNews={[Function]}
+  />
+  <List
+    bordered={true}
+    dataSource={Array []}
+    loading={false}
+    pagination={false}
+    prefixCls="ant-list"
+    renderItem={[Function]}
+    split={true}
+  />
+</div>
+`;
