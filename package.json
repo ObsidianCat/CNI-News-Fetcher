@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "server-dev": "nodemon ./bin/www",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -13,8 +16,10 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "jest": "^23.6.0",
     "moxios": "^0.4.0",
+    "nodemon": "^1.18.9",
     "supertest": "^3.3.0"
   }
 }

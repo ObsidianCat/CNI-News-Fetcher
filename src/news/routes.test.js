@@ -1,6 +1,6 @@
 const request = require('supertest')
 const app = require('../app')
-const NEWS_URL = require('./constants').NEWS_URL;
+const NEWS_URL = require('./constants').NEWS_URL_BASE;
 const NEWS_API_KEY =require('./constants').NEWS_API_KEY;
 const newsRoutes = require('./routes')
 const moxios = require('moxios');
@@ -22,7 +22,7 @@ describe('News get route', () => {
   });
 
   it('should return set of articles filtered by search word', async ()=>{
-    moxios.stubRequest(`${NEWS_URL}?q=Sunday&apiKey=${NEWS_API_KEY}`, {
+    moxios.stubRequest(`${NEWS_URL}everything?q=Sunday&apiKey=${NEWS_API_KEY}`, {
       status: 200,
       response: {
           "status": "ok",
@@ -66,7 +66,7 @@ describe('News get route', () => {
   })
 
   it('should return set of latest headlines', async ()=>{
-    moxios.stubRequest(`${NEWS_URL}?q=Sunday&apiKey=${NEWS_API_KEY}`, {
+    moxios.stubRequest(`${NEWS_URL}/top-headlines?q=Sunday&apiKey=${NEWS_API_KEY}`, {
       status: 200,
       response: {
         "status": "ok",
