@@ -6,7 +6,8 @@
     "start": "node ./bin/www",
     "server-dev": "nodemon ./bin/www",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "test": "jest src/"
   },
   "dependencies": {
     "axios": "^0.18.0",
