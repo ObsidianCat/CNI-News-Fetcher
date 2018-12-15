@@ -1,1 +1,1 @@
-exports.newsRouter = require('./routes')
+exports.newsRouter = require("./routes");
