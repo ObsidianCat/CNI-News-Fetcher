@@ -8,7 +8,7 @@ module.exports = (router = new Router()) => {
     try {
       const url = req.params.type === 'filtered'?
         `${NEWS_URL_BASE}everything?q=${req.query.query}&apiKey=${NEWS_API_KEY}`
-        :`${NEWS_URL_BASE}top-headlines?country=uk&apiKey=${NEWS_API_KEY}`
+        :`${NEWS_URL_BASE}top-headlines?country=gb&apiKey=${NEWS_API_KEY}`
       const response = await axios.get(url)
       res.send({data: response.data});
     }
