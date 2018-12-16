@@ -2,16 +2,16 @@
 ## Prerequisites
 For running the project, you need the following to be installed on your machine
 
-Node, npm
+* Node
+* npm
 
 ## Installing
-Clone/download the project
-enter the project root directory and install required dependencies with
+Clone/download the project. Enter the project root directory and install required dependencies with
 ```
 npm install
 ```
 
-## Running with production version of client side app
+## Fast track - running with production version of client side app
 In the project root directory, run
 ```
 npm start
@@ -21,7 +21,7 @@ The application will be available, by default at
 [http://localhost:4000/]()
 
 ### Running with development version of client side app
-Withing the project folder, enter the 'client' directory and install required client-side dependencies with
+From the root folder, enter the 'client' directory and install required client-side dependencies with
 ```
 npm install
 ```
@@ -40,7 +40,7 @@ In the project root directory, run
 npm test
 ```
 ### Running client side tests
-In the project client directory, run
+From the root folder, enter the 'client' directory. From here run
 ```
 npm test
 ```
