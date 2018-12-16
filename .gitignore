@@ -36,7 +36,7 @@ build/Release
 node_modules/
 jspm_packages/
 client/node_modules/
-client/node_modules/.gitignore
+.idea/
 
 # Typescript v1 declaration files
 typings/
@@ -64,3 +64,6 @@ typings/
 
 *.xml
 
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/codeStyles/Project.xml
