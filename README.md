@@ -21,14 +21,15 @@ The application will be available, by default at <br>
 [http://localhost:4000/]()
 
 #### Running with development version of client side app
-From the root folder, enter the 'client' directory and install required client-side dependencies with
+Install the dependencies for a client side part of the project
 ```
-npm install
+npm install --prefix client
 ```
-Back in app root directory, run 
+Then run
 ```
 npm run dev
 ```
+
 It will start server and client side apps in parallel. By default the client side app will be accessible at <br>
 [http://localhost:3000/]()
 
@@ -39,7 +40,7 @@ In the project root directory, run
 npm test
 ```
 #### Running client side tests
-From the root folder, enter the 'client' directory. From here run
+In the directory, run
 ```
-npm test
+npm test --prefix client
 ```
