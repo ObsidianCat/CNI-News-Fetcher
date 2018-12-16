@@ -76,7 +76,6 @@ describe("News get route", () => {
     );
 
     const res = await request(app).get("/filtered?query=Sunday");
-    console.log(res);
     expect(res.status).toEqual(200);
     expect(res.body).toMatchSnapshot();
   });
@@ -148,7 +147,6 @@ describe("News get route", () => {
     );
 
     const res = await request(app).get("/headlines");
-    console.log(res);
     expect(res.status).toEqual(200);
     expect(res.body).toMatchSnapshot();
   });

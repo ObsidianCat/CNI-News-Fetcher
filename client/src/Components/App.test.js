@@ -88,9 +88,7 @@ it('set correct state after fetching data', (done) => {
   wrapper.instance().componentDidMount()
 
   moxios.wait(()=>{
-    console.log(wrapper.state());
     expect(wrapper.state()).toHaveProperty('news', resMock.articles);
-
     done()
   })
 
